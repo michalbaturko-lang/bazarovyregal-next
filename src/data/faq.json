@@ -1,0 +1,131 @@
+{
+  "totalQuestions": 21,
+  "categories": [
+    {
+      "id": "objednavka",
+      "name": "Objednávka a platba",
+      "icon": "🛒",
+      "questions": [
+        {
+          "question": "Jak objednat?",
+          "answer": "Objednávka je velmi jednoduchá: 1) Vyberte si regál na webu nebo na Vyprodej-regalu.cz, 2) Přidejte regál do košíku, 3) Vyplňte doručovací adresu, 4) Zvolte způsob platby (karta, převod, dobírka), 5) Potvrďte objednávku. Všechny nákupy probíhají na Vyprodej-regalu.cz."
+        },
+        {
+          "question": "Jaké jsou platební možnosti?",
+          "answer": "Platba kartou (okamžitá, nejrychlejší zpracování), Převod na účet (ČSOB, Raiffeisenbank atd.), Dobírka (zaplatíte při doručení, bez poplatku). Všechny metody jsou bezpečné a ověřené."
+        },
+        {
+          "question": "Můžu objednat na firmu?",
+          "answer": "Ano, zcela bez problému! Při objednávce si můžete vybrat jako zákazník: Fyzickou osobu (jméno a příjmení) nebo Právnickou osobu (obchodní název a IČO). Faktura se vygeneruje automaticky s firemními údaji."
+        },
+        {
+          "question": "Je možné vyzvednout osobně?",
+          "answer": "Ano, ale pouze v Praze po předchozí domluvě. Skladiště je v Praze, vyzvednutí je bezplatné. Domluvte se emailem: info@bazarovyregal.cz. Vyzvednutí je možné Po-Pá 8:00-16:00."
+        }
+      ]
+    },
+    {
+      "id": "doprava",
+      "name": "Doprava",
+      "icon": "🚚",
+      "questions": [
+        {
+          "question": "Kolik stojí doprava?",
+          "answer": "Základní sazba: 99 Kč (regály do ~30 kg). Těžší regály: cena se vypočte podle hmotnosti. Doprava ZDARMA pro objednávky nad 2000 Kč."
+        },
+        {
+          "question": "Jak dlouho trvá doručení?",
+          "answer": "Expediční lhůta: Do 24 hodin od potvrzení objednávky. Doručení: 2-3 pracovní dny (Po-Pá). Sledování: SMS s číslem balíku. Objednáte-li do 14:00, objednávka se expeduje do konce dne."
+        },
+        {
+          "question": "Kam doručujete?",
+          "answer": "Doručujeme do celé České republiky (ČR). Praha a okolí - výběr konkrétního času. Ostatní části ČR - doručení v pracovní dny. Na adresu domu, kanceláře nebo skladu. Přes ověřené přepravce (Česká pošta, GLS, PPL)."
+        },
+        {
+          "question": "Doručíte i na Slovensko?",
+          "answer": "Ano! Na Slovensku objednávejte na Bazarovyregal.sk. Stejné produkty a ceny, slovenská podpora a fakturace. Doručení po celém Slovensku. Záruka 7 let platí i na Slovensku."
+        }
+      ]
+    },
+    {
+      "id": "produkty",
+      "name": "Produkty",
+      "icon": "📦",
+      "questions": [
+        {
+          "question": "Jsou regály nové?",
+          "answer": "Ano, 100% nové a nerozbalené! Zcela nové, nikdy předtím neprodané. V originálním balení od výrobce. Bez poškození a defektů. Se všemi součástmi a návodem v češtině. Pocházejí z likvidace skladu."
+        },
+        {
+          "question": "Jaká je nosnost regálů?",
+          "answer": "Regály do domu (4-policové): 700 kg nosnosti (175 kg na jednu polici). Regály do garáže (4-5 policový): 700-875 kg nosnosti. Profesionální regály: 1000-1200 kg nosnosti. Přesná nosnost je vždy v popisu produktu."
+        },
+        {
+          "question": "Z čeho jsou regály vyrobené?",
+          "answer": "Ocelové regály (základní materiál) - extrémně pevné a odolné. Lakované regály - přepískovaný ocelový rám pokrytý barvou (černá, bílá, červená, modrá), vhodné do interiérů. Zinkované regály - ocelový rám pokrytý zinkovou vrstvou, odolává vlhkosti a korozi."
+        },
+        {
+          "question": "Lze nastavit výšku polic?",
+          "answer": "Ano, výška polic je nastavitelná! Krok nastavení: Po 3,5 cm. Jednoduché vyjmutí a přesunutí police. Bez nářadí. Typicky 5-6 pozic na výšku."
+        }
+      ]
+    },
+    {
+      "id": "montaz",
+      "name": "Montáž",
+      "icon": "🔧",
+      "questions": [
+        {
+          "question": "Je montáž složitá?",
+          "answer": "Ne! Montáž je velmi jednoduchá a trvá jen 10 minut. Bezšroubový systém: policie jednoduše vsuňte do sloupů. Bez vrtání a šroubování. Zvládnete to sami. Typicky 10 minut pro 4-policový regál."
+        },
+        {
+          "question": "Potřebuji nářadí?",
+          "answer": "Ne, stačí gumová palička! Na montáž potřebujete pouze gumovou paličku pro snazší zasunutí polic. Bez vrtačky, bez bitů, bez šroubováku."
+        },
+        {
+          "question": "Je k dispozici návod?",
+          "answer": "Ano! Tiskový návod v češtině je v balení. Barevné srozumitelné ilustrace. Online YouTube video s postupem montáže. Podpora na info@bazarovyregal.cz."
+        }
+      ]
+    },
+    {
+      "id": "zaruka",
+      "name": "Záruka a reklamace",
+      "icon": "🛡️",
+      "questions": [
+        {
+          "question": "Jaká je záruka?",
+          "answer": "7 let záruka na všechny regály! Pokrývá: rozbitý/deformovaný ocelový rám, prasklé/zlomené police, opotřebované/rezavé části, jakékoliv výrobní vady. Vztahuje se na normální používání."
+        },
+        {
+          "question": "Co když mi regál nevyhovuje?",
+          "answer": "Máte 30 dní na vrácení bez udání důvodu! Vrácení je bezplatné. Peníze vrátíme do 14 dnů. Regál musí být v původním stavu (v krabici, nepoškozený)."
+        },
+        {
+          "question": "Jak reklamovat?",
+          "answer": "1) Napište email na info@bazarovyregal.cz, 2) Popište problém a přiložte fotografie, 3) Uveďte číslo objednávky, 4) Odpověď do 48 hodin, 5) Řešení: náhrada, vrácení peněz, nebo oprava."
+        }
+      ]
+    },
+    {
+      "id": "o-nas",
+      "name": "O Bazarovyregal.cz",
+      "icon": "ℹ️",
+      "questions": [
+        {
+          "question": "Kdo jste?",
+          "answer": "Bazarovyregal.cz je prezentační web pro nákupní platformu Vyprodej-regalu.cz. Struktura: Vyprodej-regalu.cz (mateřská firma a hlavní e-shop), Bazarovyregal.cz (prezentační web s lepším UX), Bazarovyregal.sk (verze pro slovenské zákazníky). Všechny weby spravuje stejný tým."
+        },
+        {
+          "question": "Proč jsou ceny tak nízké?",
+          "answer": "Probíhá likvidace skladu! Velké přebytky zásob, nákupy se hromadily ve skladě. Likvidace je nutná. Nižší marže, počítáme na objem prodeje. Stejná kvalita a výrobce jako normálně."
+        },
+        {
+          "question": "Jsou slevy skutečné?",
+          "answer": "Ano, 100% skutečné! Procento slevy je vypočteno oproti originální ceně od výrobce nebo standardní ceně v běžném obchodě. Nikdy si nenadzvedáváme cenu. Počty kusů jsou omezené."
+        }
+      ]
+    }
+  ]
+}

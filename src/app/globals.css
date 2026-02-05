@@ -2,26 +2,219 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    @apply bg-dark-800 text-white font-sans;
+    overflow-x: hidden;
+  }
+
+  /* Scrollbar – dark luxury */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-400 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gold-700;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-gold-500/30 text-white;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Glass morphism card */
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .glass-card:hover {
+    @apply bg-white/[0.06] border-gold-500/20 shadow-card-hover;
+  }
+
+  /* Gold bordered card */
+  .gold-card {
+    @apply bg-dark-700/50 border border-dark-400/30 rounded-2xl;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .gold-card:hover {
+    @apply border-gold-500/40 shadow-gold-md;
+  }
+
+  /* Primary gold button */
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-6 py-3
+           bg-gold-gradient text-dark-900 font-semibold rounded-xl
+           transition-all duration-300 ease-out
+           hover:shadow-gold-lg hover:-translate-y-0.5
+           active:translate-y-0 active:shadow-gold-sm
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0;
+  }
+
+  /* Ghost button */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-6 py-3
+           bg-white/5 text-white border border-white/10 rounded-xl
+           transition-all duration-300 ease-out
+           hover:bg-white/10 hover:border-gold-500/30
+           active:bg-white/5;
+  }
+
+  /* Outline gold button */
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center px-6 py-3
+           bg-transparent text-gold-400 border border-gold-500/40 rounded-xl
+           transition-all duration-300 ease-out
+           hover:bg-gold-500/10 hover:border-gold-500/60 hover:shadow-gold-sm;
+  }
+
+  /* Section container */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Gold divider line */
+  .gold-divider {
+    @apply h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent;
+  }
+
+  /* Cosmic background glow */
+  .cosmic-bg {
+    position: relative;
+  }
+  .cosmic-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(88, 28, 135, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(201, 165, 78, 0.04) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Grain texture overlay */
+  .grain-overlay {
+    position: relative;
+  }
+  .grain-overlay::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    opacity: 0.015;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* Bioluminescent glow effect for product images */
+  .bio-glow {
+    position: relative;
+  }
+  .bio-glow::after {
+    content: '';
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(ellipse at center, rgba(201, 165, 78, 0.08) 0%, rgba(88, 28, 135, 0.04) 40%, transparent 70%);
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+  }
+  .bio-glow:hover::after {
+    opacity: 1;
+  }
+
+  /* Text gradient gold */
+  .text-gold-shine {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #d4a853 0%, #f2d99e 50%, #c9a54e 100%);
+  }
+
+  /* Shimmer effect on CTA */
+  .shimmer-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  .shimmer-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    animation: shimmer-sweep 4s ease-in-out infinite;
+  }
+
+  /* Badge styles */
+  .badge-sale {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold
+           bg-danger-600 text-white animate-badge-pulse;
+  }
+  .badge-stock {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+           bg-success-600/20 text-success-400 border border-success-500/20;
+  }
+  .badge-bestseller {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold
+           bg-gold-500/20 text-gold-400 border border-gold-500/30;
+  }
+
+  /* Product image container */
+  .product-image-container {
+    @apply relative aspect-square rounded-xl overflow-hidden bg-dark-700/30;
+  }
+  .product-image-container img {
+    @apply object-contain w-full h-full transition-transform duration-500;
+  }
+  .product-image-container:hover img {
+    @apply scale-105;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Tabular numbers for prices */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Keyframe for shimmer sweep */
+@keyframes shimmer-sweep {
+  0% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
+/* Smooth page transitions */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus visible for keyboard navigation */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-gold-500/60 rounded-sm;
 }

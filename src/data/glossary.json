@@ -1,0 +1,185 @@
+{
+  "totalTerms": 19,
+  "terms": [
+    {
+      "id": "archivni-regal",
+      "letter": "A",
+      "term": "Archivní regál",
+      "definition": "Specializovaný typ regálu určený pro skladování dokumentů, šanonů a archivních krabic. Typicky má menší hloubku polic (30-40 cm) a výšku uzpůsobenou formátu A4.",
+      "related": [
+        "Kovový regál",
+        "Police"
+      ]
+    },
+    {
+      "id": "bezpecnostni-zarazka",
+      "letter": "B",
+      "term": "Bezpečnostní zarážka",
+      "definition": "Pojistný prvek, který brání vypadnutí police z regálu nebo sklouznutí předmětů. U kvalitních regálů je standardní výbavou pro každou polici.",
+      "related": [
+        "Police",
+        "Nosnost"
+      ]
+    },
+    {
+      "id": "celkova-nosnost",
+      "letter": "C",
+      "term": "Celková nosnost regálu",
+      "definition": "Maximální hmotnost, kterou může nést celý regál včetně všech polic. Typicky se pohybuje od 400 kg u lehkých regálů až po 1750+ kg u těžkých průmyslových. Celková nosnost není prostý součet nosností polic – vždy platí nižší hodnota.",
+      "related": [
+        "Nosnost police",
+        "Rovnoměrné rozložení"
+      ]
+    },
+    {
+      "id": "dratena-police",
+      "letter": "D",
+      "term": "Drátěná police",
+      "definition": "Typ police tvořený sítí z ocelových drátů. Propouští světlo a vzduch, ideální pro skladování potravin, sportovního vybavení nebo oblečení. Nižší nosnost než plné police.",
+      "related": [
+        "Police",
+        "Kovový regál"
+      ]
+    },
+    {
+      "id": "hloubka-police",
+      "letter": "H",
+      "term": "Hloubka police",
+      "definition": "Rozměr police od přední k zadní hraně. Standardní hloubky jsou 30, 40, 45, 50 a 60 cm. Hlubší police pojmou více, ale zabírají prostor. Pro garáže je ideální 40-50 cm.",
+      "related": [
+        "Police",
+        "Rozměry regálu"
+      ]
+    },
+    {
+      "id": "kovovy-regal",
+      "letter": "K",
+      "term": "Kovový regál",
+      "definition": "Regál s nosnou konstrukcí z kovu (ocel, hliník). Vyniká vysokou nosností, odolností a dlouhou životností. Dostupný v lakované nebo pozinkované variantě. Ideální do garáží, sklepů, dílen a skladů.",
+      "related": [
+        "Pozinkovaný regál",
+        "Lakovaný regál"
+      ]
+    },
+    {
+      "id": "kotveni",
+      "letter": "K",
+      "term": "Kotvení regálu",
+      "definition": "Upevnění regálu ke zdi nebo podlaze pomocí speciálních kotev. Zvyšuje stabilitu a bezpečnost, zejména u vysokých regálů nebo při vyšším zatížení. Doporučeno pro všechny regály nad 150 cm výšky.",
+      "related": [
+        "Stabilita"
+      ]
+    },
+    {
+      "id": "nosnost",
+      "letter": "N",
+      "term": "Nosnost police",
+      "definition": "Maximální hmotnost, kterou unese jedna police regálu při rovnoměrném rozložení zátěže. Běžné hodnoty jsou 80-350 kg na polici. Vždy kontrolujte, zda výrobce uvádí nosnost při rovnoměrném rozložení.",
+      "related": [
+        "Celková nosnost",
+        "Rovnoměrné rozložení"
+      ]
+    },
+    {
+      "id": "police",
+      "letter": "P",
+      "term": "Police",
+      "definition": "Vodorovná plocha regálu určená k ukládání předmětů. Může být plná (kovová, MDF) nebo drátěná. Výškově nastavitelná police umožňuje přizpůsobit rozestupy podle potřeby.",
+      "related": [
+        "Nosnost",
+        "Hloubka police"
+      ]
+    },
+    {
+      "id": "pozinkovany-regal",
+      "letter": "P",
+      "term": "Pozinkovaný regál",
+      "definition": "Kovový regál s povrchovou úpravou zinkováním. Vrstva zinku chrání ocel před korozí a je ideální do vlhkých prostor jako sklepy, nevytápěné garáže nebo venkovní zastřešené prostory. Vyšší odolnost = vyšší cena.",
+      "related": [
+        "Lakovaný regál",
+        "Kovový regál"
+      ]
+    },
+    {
+      "id": "praskove-lakovani",
+      "letter": "P",
+      "term": "Práškové lakování",
+      "definition": "Metoda povrchové úpravy, kdy se na kov nanáší práškový lak a následně vytvrzuje v peci. Vytváří odolný, rovnoměrný povrch v různých barvách. Běžnější a levnější než zinkování, ale méně odolné ve vlhku.",
+      "related": [
+        "Lakovaný regál"
+      ]
+    },
+    {
+      "id": "rozmery",
+      "letter": "R",
+      "term": "Rozměry regálu",
+      "definition": "Základní rozměry regálu se uvádějí jako výška × šířka × hloubka (V×Š×H) v centimetrech. Standardní výšky jsou 150, 180 a 200 cm. Šířky 60, 90, 100 a 120 cm. Hloubky 30, 40, 45 a 60 cm.",
+      "related": [
+        "Hloubka police"
+      ]
+    },
+    {
+      "id": "rovnomerne-rozlozeni",
+      "letter": "R",
+      "term": "Rovnoměrné rozložení zátěže",
+      "definition": "Podmínka pro dosažení uvedené nosnosti police. Zátěž musí být rozprostřena po celé ploše police, nikoliv soustředěna na jednom místě. Bodové zatížení může vést k poškození nebo zhroucení police.",
+      "related": [
+        "Nosnost"
+      ]
+    },
+    {
+      "id": "sroubovy-regal",
+      "letter": "S",
+      "term": "Šroubový regál",
+      "definition": "Typ regálu, kde se jednotlivé díly spojují šrouby. Vyšší nosnost a stabilita než zasouvací systémy. Montáž je náročnější, ale výsledek je pevnější. Vhodný pro těžké zatížení.",
+      "related": [
+        "Zasouvací regál",
+        "Nosnost"
+      ]
+    },
+    {
+      "id": "stabilita",
+      "letter": "S",
+      "term": "Stabilita regálu",
+      "definition": "Schopnost regálu odolávat převržení nebo vychýlení. Ovlivňuje ji poměr výšky k šířce, rozložení zátěže a kotvení. Stabilitu zvyšuje ukládání těžších předmětů na spodní police.",
+      "related": [
+        "Kotvení"
+      ]
+    },
+    {
+      "id": "skladovy-regal",
+      "letter": "S",
+      "term": "Skladový regál",
+      "definition": "Robustní regál určený pro skladování zboží v profesionálních skladech. Vysoká nosnost (často 300+ kg na polici), masivní konstrukce a možnost sestavení do řad. Pro domácí použití obvykle předimenzovaný.",
+      "related": [
+        "Kovový regál"
+      ]
+    },
+    {
+      "id": "zasouvaci-regal",
+      "letter": "Z",
+      "term": "Zasouvací regál (bezšroubový)",
+      "definition": "Typ regálu, kde se police a stojiny spojují zasunutím bez nutnosti šroubů. Rychlá a snadná montáž bez nářadí. Nižší nosnost než šroubové systémy, ale pro běžné domácí použití dostačující.",
+      "related": [
+        "Šroubový regál"
+      ]
+    },
+    {
+      "id": "lakovany-regal",
+      "letter": "Z",
+      "term": "Lakovaný regál",
+      "definition": "Kovový regál s povrchovou úpravou práškového lakování. Dostupný v různých barvách (nejčastěji šedá, modrá, černá). Vhodný do suchých prostor. Levnější než pozinkovaný, ale méně odolný ve vlhku.",
+      "related": [
+        "Pozinkovaný regál",
+        "Práškové lakování"
+      ]
+    },
+    {
+      "id": "zaruka",
+      "letter": "Z",
+      "term": "Záruka na regál",
+      "definition": "Doba, po kterou výrobce garantuje bezchybnou funkci regálu. U kvalitních kovových regálů se pohybuje od 2 do 10 let. Vztahuje se na vady materiálu a zpracování, nikoliv na poškození nesprávným používáním.",
+      "related": []
+    }
+  ]
+}

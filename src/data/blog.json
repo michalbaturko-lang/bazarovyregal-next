@@ -1,0 +1,71 @@
+{
+  "totalArticles": 6,
+  "articles": [
+    {
+      "id": 1,
+      "title": "Jak vybrat regál do garáže: Kompletní průvodce",
+      "slug": "jak-vybrat-regal-do-garaze.html",
+      "category": "Návod",
+      "categoryColor": "blue",
+      "readTime": "10 min",
+      "excerpt": "Na co myslet při výběru regálu do garáže? Nosnost, rozměry, materiál a další důležité parametry.",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Regály do sklepa: Co funguje a co ne",
+      "slug": "regaly-do-sklepa.html",
+      "category": "Tipy",
+      "categoryColor": "green",
+      "readTime": "8 min",
+      "excerpt": "Vlhkost, teplota, nosnost - jaký regál vydrží ve sklepě? Pozinkované vs. lakované regály.",
+      "image": "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=400&h=250&fit=crop",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Nosnost regálu: Jak ji správně pochopit",
+      "slug": "nosnost-regalu.html",
+      "category": "Odborný",
+      "categoryColor": "purple",
+      "readTime": "6 min",
+      "excerpt": "Nosnost police vs. celková nosnost regálu. Co znamenají údaje v katalogu a jak je interpretovat.",
+      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=250&fit=crop",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "7 tipů jak organizovat nářadí na regále",
+      "slug": "organizace-naradi.html",
+      "category": "Inspirace",
+      "categoryColor": "orange",
+      "readTime": "7 min",
+      "excerpt": "Plastové boxy, háčky, magnetické lišty - jak efektivně využít regálový prostor pro nářadí.",
+      "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=400&h=250&fit=crop",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Správné skladování pneumatik na regále",
+      "slug": "skladovani-pneumatik.html",
+      "category": "Praktické",
+      "categoryColor": "red",
+      "readTime": "5 min",
+      "excerpt": "Jak skladovat zimní a letní pneumatiky, aby vydržely co nejdéle. Držáky, police a správné rozložení.",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Montáž kovového regálu krok za krokem",
+      "slug": "montaz-regalu.html",
+      "category": "Návod",
+      "categoryColor": "blue",
+      "readTime": "12 min",
+      "excerpt": "Podrobný návod na sestavení kovového regálu. Jaké nářadí potřebujete a na co si dát pozor.",
+      "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&h=250&fit=crop",
+      "featured": false
+    }
+  ]
+}
