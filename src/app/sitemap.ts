@@ -1,10 +1,12 @@
 import { MetadataRoute } from "next";
 import { getAllProducts } from "@/lib/products";
+import { getAllSeoPages } from "@/lib/seo-pages";
 
 const BASE_URL = "https://bazarovyregal-next.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const products = getAllProducts();
+  const seoPages = getAllSeoPages();
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
@@ -27,6 +29,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/slovnik`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
       url: `${BASE_URL}/kontakt`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -38,50 +52,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
-    // SEO category pages
-    {
-      url: `${BASE_URL}/regaly-do-sklepa`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/regaly-do-garaze`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/tezke-regaly`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/kancelarske-regaly`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/cerne-regaly`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/bile-regaly`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/pozinkovane-regaly`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
   ];
+
+  // SEO category pages (dynamically from seo-pages.ts)
+  const seoPageEntries: MetadataRoute.Sitemap = seoPages.map((page) => ({
+    url: `${BASE_URL}/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
 
   // Product pages
   const productPages: MetadataRoute.Sitemap = products.map((product) => ({
@@ -91,5 +70,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...productPages];
+  return [...staticPages, ...seoPageEntries, ...productPages];
 }
